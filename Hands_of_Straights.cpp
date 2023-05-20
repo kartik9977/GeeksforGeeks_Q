@@ -1,4 +1,7 @@
- map<int,int> mm;
+class Solution {
+  public:
+    bool isStraightHand(int N, int groupSize, vector<int> &hand) {
+        map<int,int> mm;
         for(auto x:hand)mm[x]++;
         int num=-1,c=0;
         while(true){
@@ -14,3 +17,5 @@
             if(mm.size()==0)break;
         }
         return true;
+    }
+};
